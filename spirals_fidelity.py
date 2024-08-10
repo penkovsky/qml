@@ -94,6 +94,11 @@ def plot_decision_boundary(model, X, Y=None):
     Z = Z.reshape(xx.shape)
     # Plot the contour and training examples
     img = plt.contourf(xx, yy, Z, cmap=plt.cm.plasma)
+
+    # Insert the colorbar for the contourf.
+    # Take care about the colorbar size.
+    plt.colorbar(img, fraction=0.046, pad=0.04)
+
     # plt.xlabel('x1', fontsize=18)
     # plt.ylabel('x2', fontsize=18)
     plt.xticks([-1, 0, 1])
