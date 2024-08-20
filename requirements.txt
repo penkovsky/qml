@@ -2,3 +2,10 @@ matplotlib==3.8.4
 numpy==1.26.4
 pandas==2.2.2
 PennyLane==0.37.0
+
+# To run on IBM Quantum devices (optional):
+qiskit==1.0.2
+qiskit-aer==0.14.0.1
+qiskit-ibm-runtime==0.22.0
+pylatexenc==2.10
+jupyter>=1.0.0
